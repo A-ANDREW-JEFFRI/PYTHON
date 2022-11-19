@@ -1,0 +1,11 @@
+def count(a,b):
+    for i in a:
+        if i in b:
+            b[i] += 1
+        else:
+            b[i] = 1
+    print("Count of all characters in GeeksforGeeks is :\n "+ str(b))
+
+a= input("Enter your string :")
+b = {}
+count(a,b)
